@@ -17,7 +17,11 @@ function getNames() {
     return objs;
 }
 
-function Navbar (props) {
+function Example (props) {
+
+    //fetches data from API
+    console.log(props.children);
+
     const [name, setName] = useState("grendel");
     const [nameCount, setNameCount] = useState(1);
 
@@ -43,4 +47,4 @@ function Navbar (props) {
     );
 }
 
-export default Navbar;
+export default Example;
