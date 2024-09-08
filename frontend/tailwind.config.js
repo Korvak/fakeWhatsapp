@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // Include all source files in your project
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+          "teal" : "#008E6B"
+      }
+    },
   },
   plugins: [],
 };

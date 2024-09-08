@@ -1,14 +1,12 @@
 // App.js
 import React from 'react';
+import WApp from './components/Premade/WApp';
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-blue-50">
-      <h1 className="text-4xl font-bold text-blue-600">
-        Tailwind CSS is working!
-      </h1>
-    </div>
+    <WApp></WApp>
   );
 }
+
 
 export default App;
