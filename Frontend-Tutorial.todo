@@ -1,0 +1,32 @@
+#making the app (node.js shell) without typescript
+npx create-react-app app-name
+cd app-name
+npm install react-router-dom
+
+#adding tailwind 
+
+npm install -D tailwindcss postcss autoprefixer
+
+npx tailwindcss init -p
+
+#write in tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}", // Include all source files in your project
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+#add tailwind to css 
+
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
