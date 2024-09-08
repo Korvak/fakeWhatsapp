@@ -1,13 +1,21 @@
 // App.js
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+
+import Navbar from './components/Shared/navbar';
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-blue-50">
-      <h1 className="text-4xl font-bold text-blue-600">
-        Tailwind CSS is working!
-      </h1>
+    <div>
+      <Navbar cls={"text-red-700"}></Navbar>
+      <Router>
+        <Routes>
+          <Route></Route>
+        </Routes>
+      </Router>
     </div>
+    
   );
 }
 
