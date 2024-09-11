@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import '../../styles/app.css';
 
 //icons
 import { MdMoreVert, MdPerson, MdPhotoCamera, MdSearch } from "react-icons/md";
+import { UserContext } from "../Context/userContext";
 
 //components
 
 function Navbar (props) {
 
+    const user = useContext(UserContext);
+
     return (
-        <nav className="w-full h-18 bg-green-500 text-white">
+        <nav className= {`w-full h-18 text-white ${user.style.bg_color}`}>
             <div className="flex flex-initial h-8 mb-2">
                 <h3 className="text-2xl font-bold ml-2 mt-1 w-11/12">WhatsApp</h3>
                 <div className="w-1/12 flex flex-1 mt-2 mb-2">
