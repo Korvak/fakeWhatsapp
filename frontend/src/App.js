@@ -2,22 +2,35 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+//components
 
-import Example from './components/Examples/example.jsx';
+import Navbar from './components/shared/navbar.jsx';
 
 function App() {
+
+  //use effect to fetch user specification
+
+  const user = {
+    config : {
+      navType : 'VERT'
+    }
+  }
+
+  const vert_nav = user.config.navType === 'VERT' ? <Navbar /> : null;
+
+
   return (
-    <div>
-      <Example cls={"text-red-700"} showSelect={true}>
-        <p key={1}>this is a child</p>
-      </Example>
+    <>
+      {vert_nav}
       <Router>
         <Routes>
           <Route path='/' ></Route>
         </Routes>
       </Router>
-    </div>
-    
+
+
+    </>
+      
   );
 }
 
