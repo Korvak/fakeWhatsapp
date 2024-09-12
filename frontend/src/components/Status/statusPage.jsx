@@ -3,10 +3,8 @@ import { useEffect, useState } from "react";
 import { IoIosArrowUp } from 'react-icons/io';
 import {FaArrowLeft} from 'react-icons/fa';
 
-import setIsCameraOpen from "../Camera/cameraUtils";
 
-
-function StatusPage ({ status, setSelectedStatus }) {
+function StatusPage ({ status, setSelectedStatus, setIsCameraOpen}) {
     const [progress, setProgress] = useState(0);
   
     useEffect(() => {

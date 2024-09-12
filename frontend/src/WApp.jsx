@@ -423,6 +423,7 @@ function WApp() {
         <StatusPage
           status={selectedStatus}
           setSelectedStatus={setSelectedStatus}
+          setIsCameraOpen={setIsCameraOpen}
         />
       );
     if (Boolean(isCalling))
