@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { UserContext } from './components/Context/userContext.jsx';
 
 //components
-import Navbar from './components/shared/navbar.jsx';
+import Navbar from './components/Shared/navbar.jsx';
 import ChatPage from './components/Chat/chatPage.jsx';
 
 const user = {
