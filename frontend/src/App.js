@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import WApp from './components/Premade/WApp';
+import WApp from './WApp';
 
 function App() {
   return (
